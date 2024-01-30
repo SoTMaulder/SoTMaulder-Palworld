@@ -1,0 +1,661 @@
+Pal Name: Melpaca
+Code Name: Alpaca
+
+
+Pal Name: Kitsun
+Code Name: AmaterasuWolf
+
+
+Pal Name: Anubis
+Code Name: Anubis
+
+
+Pal Name: en_text
+Code Name: BadCatgirl
+
+
+Pal Name: Incineram
+Code Name: Baphomet
+
+
+Pal Name: Incineram Noct
+Code Name: Baphomet_Dark
+
+
+Pal Name: Mau
+Code Name: Bastet
+
+
+Pal Name: Mau Cryst
+Code Name: Bastet_Ice
+
+
+Pal Name: en_text
+Code Name: BeardedDragon
+
+
+Pal Name: Caprity
+Code Name: BerryGoat
+
+
+Pal Name: Vanwyrm
+Code Name: BirdDragon
+
+
+Pal Name: Vanwyrm Cryst
+Code Name: BirdDragon_Ice
+
+
+Pal Name: Necromus
+Code Name: BlackCentaur
+
+
+Pal Name: Dragostrophe
+Code Name: BlackFurDragon
+
+
+Pal Name: Shadowbeak
+Code Name: BlackGriffon
+
+
+Pal Name: Astegon
+Code Name: BlackMetalDragon
+
+
+Pal Name: en_text
+Code Name: BlueberryFairy
+
+
+Pal Name: Azurobe
+Code Name: BlueDragon
+
+
+Pal Name: Fuack
+Code Name: BluePlatypus
+
+
+Pal Name: Rushoar
+Code Name: Boar
+
+
+Pal Name: en_text
+Code Name: BrownRabbit
+
+
+Pal Name: Penking
+Code Name: CaptainPenguin
+
+
+Pal Name: Lifmunk
+Code Name: Carbunclo
+
+
+Pal Name: Tombat
+Code Name: CatBat
+
+
+Pal Name: Katress
+Code Name: CatMage
+
+
+Pal Name: Felbat
+Code Name: CatVampire
+
+
+Pal Name: Chikipi
+Code Name: ChickenPal
+
+
+Pal Name: Tocotoco
+Code Name: ColorfulBird
+
+
+Pal Name: Mozzarina
+Code Name: CowPal
+
+
+Pal Name: Cinnamoth
+Code Name: CuteButterfly
+
+
+Pal Name: Vixy
+Code Name: CuteFox
+
+
+Pal Name: Fuddler
+Code Name: CuteMole
+
+
+Pal Name: en_text
+Code Name: DarkAlien
+
+
+Pal Name: Cawgnito
+Code Name: DarkCrow
+
+
+Pal Name: en_text
+Code Name: DarkMechaDragon
+
+
+Pal Name: en_text
+Code Name: DarkMutant
+
+
+Pal Name: Menasting
+Code Name: DarkScorpion
+
+
+Pal Name: Eikthyrdeer
+Code Name: Deer
+
+
+Pal Name: Eikthyrdeer Terra
+Code Name: Deer_Ground
+
+
+Pal Name: Daedream
+Code Name: DreamDemon
+
+
+Pal Name: Digtoise
+Code Name: DrillGame
+
+
+Pal Name: Galeclaw
+Code Name: Eagle
+
+
+Pal Name: Sparkit
+Code Name: ElecCat
+
+
+Pal Name: Boltmane
+Code Name: ElecLion
+
+
+Pal Name: Grizzbolt
+Code Name: ElecPanda
+
+
+Pal Name: Elphidran
+Code Name: FairyDragon
+
+
+Pal Name: Elphidran Aqua
+Code Name: FairyDragon_Water
+
+
+Pal Name: en_text
+Code Name: FeatherOstrich
+
+
+Pal Name: Fenglope
+Code Name: FengyunDeeper
+
+
+Pal Name: Pyrin
+Code Name: FireKirin
+
+
+Pal Name: Pyrin Noct
+Code Name: FireKirin_Dark
+
+
+Pal Name: Rooby
+Code Name: FlameBambi
+
+
+Pal Name: Arsox
+Code Name: FlameBuffalo
+
+
+Pal Name: Dinossom
+Code Name: FlowerDinosaur
+
+
+Pal Name: Dinossom Lux
+Code Name: FlowerDinosaur_Electric
+
+
+Pal Name: Petallia
+Code Name: FlowerDoll
+
+
+Pal Name: Flopie
+Code Name: FlowerRabbit
+
+
+Pal Name: Celaray
+Code Name: FlyingManta
+
+
+Pal Name: Wixen
+Code Name: FoxMage
+
+
+Pal Name: Teafant
+Code Name: Ganesha
+
+
+Pal Name: Direhowl
+Code Name: Garm
+
+
+Pal Name: Maraith
+Code Name: GhostBeast
+
+
+Pal Name: en_text
+Code Name: GhostRabbit
+
+
+Pal Name: en_text
+Code Name: GoldenHorse
+
+
+Pal Name: Gorirat
+Code Name: Gorilla
+
+
+Pal Name: en_text
+Code Name: GrassDragon
+
+
+Pal Name: Mammorest
+Code Name: GrassMammoth
+
+
+Pal Name: Mammorest Cryst
+Code Name: GrassMammoth_Ice
+
+
+Pal Name: Mossanda
+Code Name: GrassPanda
+
+
+Pal Name: Mossanda Lux
+Code Name: GrassPanda_Electric
+
+
+Pal Name: Verdash
+Code Name: GrassRabbitMan
+
+
+Pal Name: en_text
+Code Name: GuardianDog
+
+
+Pal Name: Helzephyr
+Code Name: HadesBird
+
+
+Pal Name: Nitewing
+Code Name: HawkBird
+
+
+Pal Name: Jolthog
+Code Name: Hedgehog
+
+
+Pal Name: Jolthog Cryst
+Code Name: Hedgehog_Ice
+
+
+Pal Name: Warsect 
+Code Name: HerculesBeetle
+
+
+Pal Name: Faleris
+Code Name: Horus
+
+
+Pal Name: Reindrix
+Code Name: IceDeer
+
+
+Pal Name: Foxcicle
+Code Name: IceFox
+
+
+Pal Name: Frostallion
+Code Name: IceHorse
+
+
+Pal Name: Frostallion Noct
+Code Name: IceHorse_Dark
+
+
+Pal Name: Jetragon
+Code Name: JetDragon
+
+
+Pal Name: Kelpsea
+Code Name: Kelpie
+
+
+Pal Name: Kelpsea Ignis
+Code Name: Kelpie_Fire
+
+
+Pal Name: Kingpaca
+Code Name: KingAlpaca
+
+
+Pal Name: Ice Kingpaca
+Code Name: KingAlpaca_Ice
+
+
+Pal Name: Blazamut
+Code Name: KingBahamut
+
+
+Pal Name: Univolt
+Code Name: Kirin
+
+
+Pal Name: Foxparks
+Code Name: Kitsunebi
+
+
+Pal Name: Flambelle
+Code Name: LavaGirl
+
+
+Pal Name: Dumud
+Code Name: LazyCatfish
+
+
+Pal Name: Relaxaurus
+Code Name: LazyDragon
+
+
+Pal Name: Relaxaurus Lux
+Code Name: LazyDragon_Electric
+
+
+Pal Name: en_text
+Code Name: LeafPrincess
+
+
+Pal Name: Lyleen
+Code Name: LilyQueen
+
+
+Pal Name: Lyleen Noct
+Code Name: LilyQueen_Dark
+
+
+Pal Name: Bristla
+Code Name: LittleBriarRose
+
+
+Pal Name: Leezpunk
+Code Name: LizardMan
+
+
+Pal Name: Leezpunk Ignis
+Code Name: LizardMan_Fire
+
+
+Pal Name: Blazehowl
+Code Name: Manticore
+
+
+Pal Name: Blazehowl Noct
+Code Name: Manticore_Dark
+
+
+Pal Name: Tanzee
+Code Name: Monkey
+
+
+Pal Name: Swee
+Code Name: MopBaby
+
+
+Pal Name: Sweepa
+Code Name: MopKing
+
+
+Pal Name: Lunaris
+Code Name: Mutant
+
+
+Pal Name: Grintale
+Code Name: NaughtyCat
+
+
+Pal Name: Depresso
+Code Name: NegativeKoala
+
+
+Pal Name: Killamari
+Code Name: NegativeOctopus
+
+
+Pal Name: en_text
+Code Name: NightBlueHorse
+
+
+Pal Name: Nox
+Code Name: NightFox
+
+
+Pal Name: en_text
+Code Name: NightLady
+
+
+Pal Name: Pengullet
+Code Name: Penguin
+
+
+Pal Name: Cattiva
+Code Name: PinkCat
+
+
+Pal Name: en_text
+Code Name: PinkKangaroo
+
+
+Pal Name: Lovander
+Code Name: PinkLizard
+
+
+Pal Name: Ribbuny
+Code Name: PinkRabbit
+
+
+Pal Name: Gumoss
+Code Name: PlantSlime
+
+
+Pal Name: Elizabee
+Code Name: QueenBee
+
+
+Pal Name: Dazzi
+Code Name: RaijinDaughter
+
+
+Pal Name: Ragnahawk
+Code Name: RedArmorBird
+
+
+Pal Name: Robinquill
+Code Name: RobinHood
+
+
+Pal Name: Robinquill Terra
+Code Name: RobinHood_Ground
+
+
+Pal Name: Bushi
+Code Name: Ronin
+
+
+Pal Name: Paladius
+Code Name: SaintCentaur
+
+
+Pal Name: Broncherry
+Code Name: SakuraSaurus
+
+
+Pal Name: Broncherry Aqua
+Code Name: SakuraSaurus_Water
+
+
+Pal Name: en_text
+Code Name: ScorpionMan
+
+
+Pal Name: Surfent
+Code Name: Serpent
+
+
+Pal Name: Surfent Terra
+Code Name: Serpent_Ground
+
+
+Pal Name: Gobfin
+Code Name: SharkKid
+
+
+Pal Name: Gobfin Ignis
+Code Name: SharkKid_Fire
+
+
+Pal Name: Lamball
+Code Name: SheepBall
+
+
+Pal Name: en_text
+Code Name: SifuDog
+
+
+Pal Name: Quivern
+Code Name: SkyDragon
+
+
+Pal Name: Beegarde
+Code Name: SoldierBee
+
+
+Pal Name: Suzaku
+Code Name: Suzaku
+
+
+Pal Name: Suzaku Aqua
+Code Name: Suzaku_Water
+
+
+Pal Name: Woolipop
+Code Name: SweetsSheep
+
+
+Pal Name: en_text
+Code Name: TentacleTurtle
+
+
+Pal Name: Beakon
+Code Name: ThunderBird
+
+
+Pal Name: Rayhound
+Code Name: ThunderDog
+
+
+Pal Name: Orserk
+Code Name: ThunderDragonMan
+
+
+Pal Name: Jormuntide
+Code Name: Umihebi
+
+
+Pal Name: Jormuntide Ignis
+Code Name: Umihebi_Fire
+
+
+Pal Name: Vaelet
+Code Name: VioletFairy
+
+
+Pal Name: Reptyro
+Code Name: VolcanicMonster
+
+
+Pal Name: Ice Reptyro
+Code Name: VolcanicMonster_Ice
+
+
+Pal Name: en_text
+Code Name: VolcanoDragon
+
+
+Pal Name: en_text
+Code Name: WaterLizard
+
+
+Pal Name: Chillet
+Code Name: WeaselDragon
+
+
+Pal Name: Loupmoon
+Code Name: Werewolf
+
+
+Pal Name: Sibelyx
+Code Name: WhiteMoth
+
+
+Pal Name: Cryolinx
+Code Name: WhiteTiger
+
+
+Pal Name: Hangyu
+Code Name: Windchimes
+
+
+Pal Name: Hangyu Cryst
+Code Name: Windchimes_Ice
+
+
+Pal Name: en_text
+Code Name: WingGolem
+
+
+Pal Name: Hoocrates
+Code Name: WizardOwl
+
+
+Pal Name: Cremis
+Code Name: WoolFox
+
+
+Pal Name: Wumpo
+Code Name: Yeti
+
+
+Pal Name: Wumpo Botan
+Code Name: Yeti_Grass
+
+
+Pal Name: Zoe & Grizzbolt
+Code Name: GrassBoss
+
+
+Pal Name: Lily & Lyleen
+Code Name: ForestBoss
+
+
+Pal Name: Marcus & Faleris
+Code Name: DessertBoss
+
+
+Pal Name: Axel & Orserk
+Code Name: VolcanoBoss
+
+
+Pal Name: Victor & ShadowbeakCode Name: SnowBoss
