@@ -448,6 +448,23 @@ namespace DX11_Base {
                 }
             }
 
+            if (ImGui::Button("9999 Essentials", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20))) {
+                SDK::APalPlayerCharacter* p_appc = Config.GetPalPlayerCharacter();
+                if (p_appc != NULL)
+                {
+                    if (Config.GetPalPlayerCharacter()->GetPalPlayerController() != NULL)
+                    {
+                        if (Config.GetPalPlayerCharacter()->GetPalPlayerController()->GetPalPlayerState() != NULL)
+                        {
+                            SDK::UPalPlayerInventoryData* InventoryData = Config.GetPalPlayerCharacter()->GetPalPlayerController()->GetPalPlayerState()->GetInventoryData();
+                            if (InventoryData != NULL)
+                                for (int i = 0; i < Config.essential_items.size(); i++)
+                                    AddItemToInventoryByName(InventoryData, (char*)Config.essential_items[i].c_str(), 9999);
+                        }
+                    }
+                }
+            }
+
             if (ImGui::Button("Catch Rate", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
             {
                 Config.isCatchRate = !Config.isCatchRate;
@@ -733,6 +750,12 @@ namespace DX11_Base {
                 }
 
             }
+            if (ImGui::Button("Reveal Map 100%", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
+            {
+                SDK::UWorld* world = Config.GetUWorld();
+                SDK::UPalUtility* aPalUtility = SDK::UPalUtility::GetDefaultObj();
+                    aPalUtility->GetGameSetting(world)->WorldmapUIMaskClearSize = 9999;
+            }
             if (ImGui::Button("Crash Server", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
             {
                 if (Config.GetPalPlayerCharacter() != NULL)
@@ -830,6 +853,32 @@ namespace DX11_Base {
                     }
                 }
             }
+            if (ImGui::Button("Unlock All Password", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
+            {
+                SDK::UWorld* world = Config.GetUWorld();
+                if (!world)
+                    return;
+
+                SDK::TUObjectArray* objects = world->GObjects;
+
+                for (int i = 0; i < objects->NumElements; ++i) {
+                    SDK::UObject* object = objects->GetByIndex(i);
+
+                    if (!object) {
+                        continue;
+                    }
+
+                    if (!object->IsA(SDK::UPalMapObjectPasswordLockModule::StaticClass())) {
+                        continue;
+                    }
+
+                    SDK::UPalMapObjectPasswordLockModule* locked = (SDK::UPalMapObjectPasswordLockModule*)object;
+                    if (!locked) {
+                        continue;
+                    }
+                    locked->LockState = SDK::EPalMapObjectPasswordLockState::Unlock;
+                }
+            }
             if (ImGui::Checkbox("DEATH AURA", &Config.IsDeathAura) && !Config.IsDeathAura)
             {
                 Config.mDeathAuraDistance = 10.0f;
@@ -875,7 +924,7 @@ namespace DX11_Base {
 
             ImGui::InputInt("Num To Add", &num_to_add);
 
-            ImGui::Combo("Item Category", &category, "Accessories\0Ammo\0Armor\0Crafting Materials\0Eggs\0Food\0Hats\0\Medicine\0Money\0Other\0Pal Spheres\0Saddles\0Seeds\0Tools\0Weapons\0\All\0");
+            ImGui::Combo("Item Category", &category, "Accessories\0Ammo\0Armor\0Blueprints\0Crafting Materials\0Eggs\0Food\0Hats\0\Medicine\0Money\0Other\0Pal Spheres\0Saddles\0Seeds\0Tools\0Weapons\0\All\0");
 
             std::initializer_list list = database::all;
 
@@ -888,42 +937,45 @@ namespace DX11_Base {
                 list = database::armor;
                 break;
             case 3:
-                list = database::craftingmaterials;
+                list = database::blueprints;
                 break;
             case 4:
-                list = database::eggs;
+                list = database::craftingmaterials;
                 break;
             case 5:
-                list = database::food;
+                list = database::eggs;
                 break;
             case 6:
-                list = database::hats;
+                list = database::food;
                 break;
             case 7:
-                list = database::medicine;
+                list = database::hats;
                 break;
             case 8:
-                list = database::money;
+                list = database::medicine;
                 break;
             case 9:
-                list = database::other;
+                list = database::money;
                 break;
             case 10:
-                list = database::palspheres;
+                list = database::other;
                 break;
             case 11:
-                list = database::saddles;
+                list = database::palspheres;
                 break;
             case 12:
-                list = database::seeds;
+                list = database::saddles;
                 break;
             case 13:
-                list = database::toolss;
+                list = database::seeds;
                 break;
             case 14:
-                list = database::weapons;
+                list = database::toolss;
                 break;
             case 15:
+                list = database::weapons;
+                break;
+            case 16:
                 list = database::all;
                 break;
             default:
