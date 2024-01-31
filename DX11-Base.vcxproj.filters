@@ -123,9 +123,6 @@
     <ClInclude Include="SDK.hpp">
       <Filter>Resource Files\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="ItemList.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
