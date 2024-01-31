@@ -43,6 +43,7 @@ public:
 	bool filterPlayer = false;
 	bool filterGuilds = false;
 	bool filterMapParts = false;
+	bool isTimeOfDay = false;
 	bool spec = false;
 	bool IsRevive = false;
 	float SpeedModiflers = 1.0f;
@@ -52,6 +53,7 @@ public:
 	int mDeathAuraAmount = 1.f;
 	int DamageUp = 0;
 	int DefuseUp = 0;
+	int TimeOfDay = 0;
 	int MaxWeight = 9999999;
 	int EXP = 0;
 	int Item = 0;
@@ -81,7 +83,7 @@ public:
 	};
 	//Filtered Items
 	std::vector<std::string> db_filteredItems;
-	std::vector<std::string> essential_items = { "Leather", "Wood", "Stone", "Fiber", "CopperOre", "Poppy", "Venom", "Wool", "Cloth", "Cloth2", "FireOrgan", "IceOrgan", "ElectricOrgan", "Pal_crystal_S", "PalCrystal_Ex", "PalFluid", "PalUpgradeStone3", "Horn", "bone", "Charcoal", "CopperIngot", "MachineParts", "GunPowder2", "PalOil", "PalItem_PlantSlime", "Coal", "Sulfur", "Polymer", "Cement", "IronIngot", "CarbonFiber", "Quartz", "MachineParts2", "StealIngot", "" };
+	std::vector<std::string> essential_items = { "Leather", "Wood", "Stone", "Fiber", "CopperOre", "Poppy", "Venom", "Wool", "Cloth", "Cloth2", "FireOrgan", "IceOrgan", "ElectricOrgan", "Pal_crystal_S", "PalCrystal_Ex", "PalFluid", "PalUpgradeStone3", "Horn", "bone", "Charcoal", "CopperIngot", "MachineParts", "GunPowder2", "PalOil", "PalItem_PlantSlime", "Coal", "Sulfur", "Polymer", "Cement", "IronIngot", "CarbonFiber", "Quartz", "MachineParts2", "StealIngot", ""};
 
 
 	struct SWaypoint

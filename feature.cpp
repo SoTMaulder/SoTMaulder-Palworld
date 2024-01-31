@@ -471,7 +471,7 @@ void AddWaypointLocation(std::string wpName)
 
 	FVector wpLocation = pPalCharacater->K2_GetActorLocation();
 	FRotator wpRotation = pPalCharacater->K2_GetActorRotation();
-	config::SWaypoint newWaypoint = config::SWaypoint("[WAYPOINT]" + wpName, wpLocation, wpRotation);
+	config::SWaypoint newWaypoint = config::SWaypoint(wpName, wpLocation, wpRotation);
 	Config.db_waypoints.push_back(newWaypoint);
 }
 

@@ -153,6 +153,8 @@ namespace DX11_Base {
     {
         void TABPlayer()
         {
+            ImGui::Checkbox("Open Manager", &Config.bisOpenManager);
+
             ImGui::Checkbox("InfAmmo", &Config.IsInfinAmmo);
 
             if (ImGui::Checkbox("FullBright", &Config.IsFullbright))
@@ -165,6 +167,8 @@ namespace DX11_Base {
             ImGui::Checkbox("DefenseHack", &Config.IsDefuseModiler);
 
             ImGui::Checkbox("InfStamina", &Config.IsInfStamina);
+
+            ImGui::Checkbox("Time Of Day", &Config.isTimeOfDay);
 
             ImGui::Checkbox("Godmode", &Config.IsMuteki);
 
@@ -211,12 +215,11 @@ namespace DX11_Base {
                 }
             }
 
-            ImGui::Checkbox("Open Manager", &Config.bisOpenManager);
-
             //��������һ��
             ImGui::SliderFloat("SpeedModifilers", &Config.SpeedModiflers, 1, 10);
             ImGui::SliderInt("AttackModifilers", &Config.DamageUp, 0, 200000);
             ImGui::SliderInt("defenseModifilers", &Config.DefuseUp, 0, 200000);
+            ImGui::SliderInt("Time Of Day", &Config.TimeOfDay, 0, 23);
 
             if (ImGui::Button("PrintCoords", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
             {
@@ -750,7 +753,7 @@ namespace DX11_Base {
                 }
 
             }
-            if (ImGui::Button("Reveal Map 100%", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
+            if (ImGui::Button("Reveal Map 100% +USE IN MAIN MENU THEN JOIN+", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
             {
                 SDK::UWorld* world = Config.GetUWorld();
                 SDK::UPalUtility* aPalUtility = SDK::UPalUtility::GetDefaultObj();
@@ -1474,6 +1477,11 @@ namespace DX11_Base {
                 if (Config.GetPalPlayerCharacter()->CharacterParameterComponent->IndividualParameter->GetHP().Value < INT_MAX)
                     Config.GetPalPlayerCharacter()->ReviveCharacter_ToServer(SDK::FFixedPoint(INT_MAX));
             }
+        }
+        if (Config.isTimeOfDay)
+        {
+            SDK::UPalUtility* aPalUtility = SDK::UPalUtility::GetDefaultObj();
+            aPalUtility->GetTimeManager(Config.GetUWorld())->SetGameTime_FixDay(Config.TimeOfDay);
         }
     }
 }
