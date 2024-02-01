@@ -346,6 +346,17 @@ namespace DX11_Base {
 
             }
 
+            if (ImGui::Button("No Consume Item ( Ammo, Pal Sphere ) ", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
+            {
+                auto noconsume = signature("40 55 53 41 55 41 57 48 8D 6C 24 C1 48 81 EC ?? 00 00 00 45 8B F8 4C 8B").GetPointer();
+
+                BYTE patch[] = {
+                    0xc3, 0x90
+                };
+
+                memory::WriteToMemory(noconsume, patch, 2);
+            }
+
             if (ImGui::Button("ToggleFly", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
             {
                 Config.IsToggledFly = !Config.IsToggledFly;
@@ -371,13 +382,11 @@ namespace DX11_Base {
 
             if (ImGui::Button("Easy Pal Condensation", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
             {
-                auto infstamina = signature("E8 ?? ?? ?? ?? 89 ?? ?? ?? 00 00 E9 ?? ?? ?? ?? 33").GetPointer();
-
-                BYTE patch[] = {
-                    0x31, 0xC0, 0xFF, 0xC0, 0x90
-                };
-
-                memory::WriteToMemory(infstamina, patch, 5);
+                SDK::TMap<int32, int32> RankRequired = SDK::TMap<int32, int32>();
+                SDK::UWorld* world = Config.GetUWorld();
+                SDK::UPalUtility* aPalUtility = SDK::UPalUtility::GetDefaultObj();
+                aPalUtility->GetGameSetting(world)->CharacterRankUpRequiredNumDefault = 1;
+                aPalUtility->GetGameSetting(world)->CharacterRankUpRequiredNumMap = RankRequired;
             }
 
             if (ImGui::Button("GodHealth", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))

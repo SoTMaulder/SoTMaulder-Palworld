@@ -33,6 +33,10 @@ void ReviveLocalPlayer();
 
 void ResetStamina();
 
+void SetPlayerInventoryWeight(float newWeight);
+
+void SetPickupsWeight(float newWeight);
+
 void GiveExperiencePoints(__int32 mXP);
 
 void SetPlayerAttackParam(__int32 mNewAtk);

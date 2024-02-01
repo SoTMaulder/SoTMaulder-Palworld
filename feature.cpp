@@ -462,6 +462,24 @@ void TeleportAllPalsToCrosshair(float mDistance)
 	}
 }
 
+void SetPlayerInventoryWeight(float newWeight)
+{
+	UPalPlayerInventoryData* pInventory = Config.GetInventoryComponent();
+	if (!pInventory)
+		return;
+
+	pInventory->MaxInventoryWeight = newWeight;
+}
+
+void SetPickupsWeight(float newWeight)
+{
+	UPalPlayerInventoryData* pInventory = Config.GetInventoryComponent();
+	if (!pInventory)
+		return;
+
+	pInventory->NowItemWeight = newWeight;
+}
+
 // credit: xCENTx
 void AddWaypointLocation(std::string wpName)
 {
