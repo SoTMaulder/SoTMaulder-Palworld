@@ -477,7 +477,12 @@ namespace DX11_Base {
                 }
             }
 
-            if (ImGui::Button("Catch Rate", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
+            if (ImGui::Button("Max Capture Power(Multiplayer)", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
+            {
+                Config.GetPalPlayerCharacter()->GetPalPlayerController()->Transmitter->GetCharacterStatusOperation()->RequestPlayerStatusUp_ToServer(999999999);
+            }
+
+            if (ImGui::Button("Catch Rate(SinglePlayer)", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
             {
                 Config.isCatchRate = !Config.isCatchRate;
                 ToggleCatchRate(Config.isCatchRate);
