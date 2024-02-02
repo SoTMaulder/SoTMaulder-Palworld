@@ -950,9 +950,13 @@ namespace DX11_Base {
         {
             
             ImGui::Text("SoTMaulder Menu");
-            ImGui::Text("Version: v2.7");
+            ImGui::Text("Version: v3.1");
+            ImGui::Text("https://github.com/SoTMaulder/SoTMaulder-Palworld");
+            ImGui::Text("If you paid for this, Charge back, You was scammed.");
             ImGui::Text("Credits to: bluesword007");
             ImGui::Text("Credits to: Palworld Offsets UnknownCheats.me");
+
+
 
             ImGui::Spacing();
             ImGui::Separator();
@@ -1375,7 +1379,7 @@ namespace DX11_Base {
         //  Display Menu Content
         //Tabs::TABMain();
 
-        ImGui::Text("W.I.P. Some Functions Might Not work.");
+        ImGui::Text("If you paid for this you got scammed, its free.");
 
         if (ImGui::BeginTabBar("##tabs", ImGuiTabBarFlags_None))
         {
