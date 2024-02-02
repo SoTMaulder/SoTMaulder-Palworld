@@ -801,13 +801,13 @@ namespace DX11_Base {
                 }
 
             }
-            if (ImGui::Button("Reveal Map 100% +USE IN MAIN MENU THEN JOIN+", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
+            if (ImGui::Button("Reveal Map 100% +Possibly Patched?+", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
             {
                 SDK::UWorld* world = Config.GetUWorld();
                 SDK::UPalUtility* aPalUtility = SDK::UPalUtility::GetDefaultObj();
                     aPalUtility->GetGameSetting(world)->WorldmapUIMaskClearSize = 9999;
             }
-            if (ImGui::Button("Crash Server", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
+            /*if (ImGui::Button("Crash Server", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20))) //Patched?
             {
                 if (Config.GetPalPlayerCharacter() != NULL)
                 {
@@ -840,7 +840,7 @@ namespace DX11_Base {
 
                     }
                 }
-            }
+            }*/
             if (ImGui::Button("Killaura", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
             {
                 if (Config.GetPalPlayerCharacter() != NULL)
