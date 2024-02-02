@@ -56,7 +56,7 @@ public:
 	int MaxWeight = 9999999;
 	int EXP = 0;
 	int Item = 0;
-	float Pos[3] = { 0,0,0 };
+	float Pos[3] = { 0.0f, 0.0f, 0.0f };
 	float mDebugEntCapDistance = 10.0f;
 	float CatchRate = 1;
 	char ItemName[255];
@@ -123,15 +123,18 @@ public:
 
 	//tele spots
 	float AnubisLocation[3] = { -170269, 94163.7, -1527.83 };
-	float AstegonLocation[3] = { -320254.55, -119209.93, 18600.84 };
+	float AstegonLocation[3] = { -320312, -120265, 18576 };
 	float AzurobeLocation[3] = { -300596, 136090, -2033.13 };
 	float BeakonLocation[3] = { -237981, 2559.41, 8413.65 };
+	float BlazamutLocation[3] = { -377246, -43725, 8626 };
 	float BroncherryAquaLocation[3] = { -330059.98, 81386.99, -1929.8 };
 	float BroncherryLocation[3] = { -430777.18, 56266.50, -1774.57 };
 	float BushiLocation[3] = { -349079.05, 104564.46, -121.11 };
 	float ChilletLocation[3] = { -315195, 236714, 2452.12 };
+	float DamudLocation[3] = { -119623, 17957, -1291 };
 	float DinossomLuxLocation[3] = { 125311, 318722, 266.384 };
 	float ElizabeeLocation[3] = { -197627, 167101, -1964.75 };
+	float ElphidranLocation[3] = { -251895, 180540, 4089 };
 	float FelbatLocation[3] = { -149024, -30562.7, -1291.73 };
 	float FenglopeLocation[3] = { -332470, 40256.4, 1333.93 };
 	float FrostallionLocation[3] = { 111978, -6394.85, 21940.2 };
@@ -142,7 +145,9 @@ public:
 	float JormuntideLocation[3] = { -244207, 74851.5, -1157.08 };
 	float KatressLocation[3] = { -276223, 268992, -1209.67 };
 	float KingpacaLocation[3] = { -336105, 181639, 901.022 };
+	float KingpacaCrystLocation[3] = { 92433, 51564, 17606 };
 	float LunarisLocation[3] = { -426589.48, 90677.8, 215.90 };
+	float LyleenNoctLocation[3] = { 31477, 85873, 5448 };
 	float MammorestLocation[3] = { -341702, 243628, -533.76 };
 	float MenastingLocation[3] = { -77943, 393182, 665.51 };
 	float MossandaLuxLocation[3] = { -208233, 364318, 1167.46 };
@@ -154,6 +159,7 @@ public:
 	float RelaxasaurusLuxLocation[3] = { -282860, 64923.7, 5357.72 };
 	float SiblexLocation[3] = { -92023.6, 273762, 18967.3 };
 	float SuzakuLocation[3] = { -4320.07, 340927, 205.005 };
+	float SweepaLocation[3] = { -393427, 51430, -1485 };
 	float UnivoltLocation[3] = { -372419.57, 102508.29, -392 };
 	float VaeletLocation[3] = { -147042, 217357, 2857.45 };
 	float VerdashLocation[3] = { -119349, 288954, 3186.98 };

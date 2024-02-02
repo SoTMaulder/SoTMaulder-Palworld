@@ -15,6 +15,34 @@ std::string rand_str(const int len)
     }
     return str;
 }
+
+void skipcz() {
+
+    SDK::UPalUtility* UtilityInstance = SDK::UPalUtility::GetDefaultObj();
+    if (UtilityInstance != nullptr) {
+
+        auto* GameStateInGame = UtilityInstance->GetPalGameStateInGame(Config.GetUWorld());
+
+        if (GameStateInGame == nullptr)
+
+            return;
+    }
+
+    SDK::APalPlayerCharacter* p_appc = Config.GetPalPlayerCharacter();
+    if (p_appc != nullptr)
+    {
+        auto* pController = p_appc->GetPalPlayerController();
+        if (pController != nullptr && pController->IsLocalPlayerController())
+        {
+            if (pController->CutsceneComponent != nullptr) {
+                pController->CutsceneComponent->StopCutscene();
+                printf("cutscene skipped");
+            }
+        }
+
+    }
+}
+
 void Damage(SDK::APalCharacter* character, int32 damage)
 {
     SDK::FPalDamageInfo  info = SDK::FPalDamageInfo();
@@ -500,13 +528,16 @@ namespace DX11_Base {
                     locationMap["Astegon"] = Config.AstegonLocation;
                     locationMap["Azurobe"] = Config.AzurobeLocation;
                     locationMap["Beakon"] = Config.BeakonLocation;
+                    locationMap["Blazamut"] = Config.BlazamutLocation;
                     locationMap["Billys Base"] = Config.BillysBase; // Trolling this kid on official NA 0046
                     locationMap["Broncherry Aqua"] = Config.BroncherryAquaLocation;
                     locationMap["Broncherry"] = Config.BroncherryLocation;
                     locationMap["Bushi"] = Config.BushiLocation;
                     locationMap["Chillet"] = Config.ChilletLocation;
+                    locationMap["Damud"] = Config.DamudLocation;
                     locationMap["Dinossom Lux"] = Config.DinossomLuxLocation;
                     locationMap["Elizabee"] = Config.ElizabeeLocation;
+                    locationMap["Elphidran"] = Config.ElphidranLocation;
                     locationMap["Felbat"] = Config.FelbatLocation;
                     locationMap["Fenglope"] = Config.FenglopeLocation;
                     locationMap["Frostallion"] = Config.FrostallionLocation;
@@ -517,7 +548,9 @@ namespace DX11_Base {
                     locationMap["Jormuntide"] = Config.JormuntideLocation;
                     locationMap["Katress"] = Config.KatressLocation;
                     locationMap["Kingpaca"] = Config.KingpacaLocation;
+                    locationMap["Kingpaca Cryst"] = Config.KingpacaCrystLocation;
                     locationMap["Lunaris"] = Config.LunarisLocation;
+                    locationMap["Lyleen Noct"] = Config.LyleenNoctLocation;
                     locationMap["Mammorest"] = Config.MammorestLocation;
                     locationMap["Menasting"] = Config.MenastingLocation;
                     locationMap["Mossanda Lux"] = Config.MossandaLuxLocation;
@@ -529,6 +562,7 @@ namespace DX11_Base {
                     locationMap["Relaxasaurus"] = Config.RelaxasaurusLuxLocation;
                     locationMap["Siblex"] = Config.SiblexLocation;
                     locationMap["Suzaku"] = Config.SuzakuLocation;
+                    locationMap["Sweepa"] = Config.SweepaLocation;
                     locationMap["Univolt"] = Config.UnivoltLocation;
                     locationMap["Vaelet"] = Config.VaeletLocation;
                     locationMap["Verdash"] = Config.VerdashLocation;
