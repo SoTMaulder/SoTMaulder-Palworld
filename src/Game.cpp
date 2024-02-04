@@ -3,7 +3,7 @@
 namespace DX11_Base {
 	GameData::GameData()
 	{
-#if DEBUG
+#ifdef _DEBUG
 		g_Console->printdbg("GameData::Initialized\n", Console::Colors::pink);
 #endif
 		return;
@@ -11,7 +11,7 @@ namespace DX11_Base {
 
 	GameVariables::GameVariables()
 	{
-#if DEBUG
+#ifdef _DEBUG
 		g_Console->printdbg("GameVariables::Initialized\n", Console::Colors::pink);
 #endif
 		return;
@@ -40,7 +40,7 @@ namespace DX11_Base {
 		char tempPath[MAX_PATH];
 		GetModuleFileNameExA(g_GameHandle, NULL, tempPath, sizeof(tempPath));
 		g_GamePath = tempPath;
-#if DEBUG
+#ifdef _DEBUG
 		g_Console->printdbg("GameData::Init - Process Window Info Established\n", Console::Colors::pink);
 #endif
 	}
