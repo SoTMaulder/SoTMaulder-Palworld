@@ -243,7 +243,6 @@ namespace DX11_Base {
                 }
             }
 
-            //��������һ��
             ImGui::SliderFloat("SpeedModifilers", &Config.SpeedModiflers, 1, 10);
             ImGui::SliderInt("AttackModifilers", &Config.DamageUp, 0, 200000);
             ImGui::SliderInt("defenseModifilers", &Config.DefuseUp, 0, 200000);
@@ -277,7 +276,6 @@ namespace DX11_Base {
         
         void TABExploit()
         {
-            //�����õİ�
             //Config.GetPalPlayerCharacter()->GetPalPlayerController()->GetPalPlayerState()->RequestSpawnMonsterForPlayer(name, 5, 1);
             ImGui::Checkbox("SafeTeleport", &Config.IsSafe);
             ImGui::InputFloat3("Pos:", Config.Pos);
@@ -962,7 +960,7 @@ namespace DX11_Base {
             ImGui::Separator();
             ImGui::Spacing();
             if (ImGui::Button("Unload DLL", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20))) {
-#if DEBUG
+#ifdef _DEBUG
                 g_Console->printdbg("\n\n[+] UNHOOK INITIALIZED [+]\n\n", Console::Colors::red);
 
 #endif
@@ -1403,7 +1401,7 @@ namespace DX11_Base {
                 Tabs::TABQuickTP();
                 ImGui::EndTabItem();
             }
-#if DEBUG
+#ifdef _DEBUG
                 if (ImGui::BeginTabItem("DEBUG"))
                 {
                     Tabs::TABDebug();
