@@ -983,6 +983,9 @@ namespace DX11_Base {
 
             switch (category)
             {
+            case 0:
+				list = database::accessories;
+				break;
             case 1:
                 list = database::ammo;
                 break;
