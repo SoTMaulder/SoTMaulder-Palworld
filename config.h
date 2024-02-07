@@ -61,6 +61,7 @@ public:
 	float CatchRate = 1;
 	char ItemName[255];
 	char inputTextBuffer[255] = "";
+	char palSpawnCage[20] = "";
 	char CharName[255];
 	SDK::UWorld* gWorld = nullptr;
 	SDK::APalPlayerCharacter* localPlayer = NULL;

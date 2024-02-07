@@ -981,7 +981,7 @@ namespace DX11_Base {
         {
             
             ImGui::Text("SoTMaulder Menu");
-            ImGui::Text("Version: v3.1");
+            ImGui::Text("Version: v3.3");
             ImGui::Text("https://github.com/SoTMaulder/SoTMaulder-Palworld");
             ImGui::Text("If you paid for this, Charge back, You was scammed.");
             ImGui::Text("Credits to: bluesword007");
@@ -1000,8 +1000,6 @@ namespace DX11_Base {
                 g_KillSwitch = TRUE;
             }
         }
-        
-        
 
         void TABItemSpawner()
         {
@@ -1010,9 +1008,9 @@ namespace DX11_Base {
 
             ImGui::InputInt("Num To Add", &num_to_add);
 
-            ImGui::Combo("Item Category", &category, "Accessories\0Ammo\0Armor\0Blueprints\0Crafting Materials\0Eggs\0Food\0Hats\0\Medicine\0Money\0Other\0Pal Spheres\0Saddles\0Seeds\0Tools\0Weapons\0\All\0");
+            ImGui::Combo("Item Category", &category, "Accessories\0Ammo\0Armor\0Blueprints\0Crafting Materials\0Eggs\0Food\0Hats\0\Medicine\0Money\0Other\0palskills\0Pal Spheres\0Saddles\0Seeds\0Tools\0Weapons\0\All\0");
 
-            std::initializer_list list = database::all;
+            std::initializer_list list = database::accessories;
 
             switch (category)
             {
@@ -1047,21 +1045,24 @@ namespace DX11_Base {
                 list = database::other;
                 break;
             case 11:
-                list = database::palspheres;
+                list = database::palskills;
                 break;
             case 12:
-                list = database::saddles;
+                list = database::palspheres;
                 break;
             case 13:
-                list = database::seeds;
+                list = database::saddles;
                 break;
             case 14:
-                list = database::toolss;
+                list = database::seeds;
                 break;
             case 15:
-                list = database::weapons;
+                list = database::toolss;
                 break;
             case 16:
+                list = database::weapons;
+                break;
+            case 17:
                 list = database::all;
                 break;
             default:

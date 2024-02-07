@@ -26,7 +26,7 @@ void ESP()
 		return;
 
 	for (int i = 0; i < T.Count(); i++)
-		ImGui::GetBackgroundDrawList()->AddText(nullptr, 16, ImVec2(10, 10 + (i * 30)), ImColor(128,0,0), T[i]->GetFullName().c_str());
+		ImGui::GetBackgroundDrawList()->AddText(nullptr, 16, ImVec2(10, 10 + (i * 30)), ImColor(128, 0, 0), T[i]->GetFullName().c_str());
 }
 
 //	draws debug information for the input actor array
@@ -75,7 +75,7 @@ void ESP_DEBUG(float mDist, ImVec4 color, UClass* mEntType)
 }
 
 //	should only be called from a GUI thread with ImGui context
-void DrawUActorComponent(TArray<UActorComponent*> Comps,ImColor color)
+void DrawUActorComponent(TArray<UActorComponent*> Comps, ImColor color)
 {
 	ImGui::GetBackgroundDrawList()->AddText(nullptr, 16, ImVec2(ImGui::GetIO().DisplaySize.x / 2, ImGui::GetIO().DisplaySize.y / 2), color, "Drawing...");
 	if (!Comps.IsValid())
@@ -152,6 +152,39 @@ void UnlockAllJournals()
 		}
 
 		pPalPlayerState->RequestObtainLevelObject_ToServer(note);
+	}
+}
+
+void SpawnPalNearbyCage(SDK::FName name, int32_t lv)
+{
+	SDK::APalPlayerCharacter* pPalCharacter = Config.GetPalPlayerCharacter();
+	if (!pPalCharacter)
+		return;
+
+	SDK::UWorld* world = Config.GetUWorld();
+	if (!world)
+		return;
+
+	SDK::TUObjectArray* objects = world->GObjects;
+
+	for (int i = 0; i < objects->NumElements; ++i) {
+		SDK::UObject* object = objects->GetByIndex(i);
+
+		if (!object) {
+			continue;
+		}
+
+		if (!object->IsA(SDK::APalCapturedCage::StaticClass())) {
+			continue;
+		}
+
+		SDK::APalCapturedCage* cage = (SDK::APalCapturedCage*)object;
+		if (cage) {
+			continue;
+		}
+
+		cage->SpawnPal(name, lv);
+		break;
 	}
 }
 
