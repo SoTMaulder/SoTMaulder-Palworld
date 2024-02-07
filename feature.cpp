@@ -123,6 +123,39 @@ void UnlockAllEffigies()
 	}
 }
 
+void UnlockAllJournals()
+{
+	APalPlayerCharacter* pPalCharacter = Config.GetPalPlayerCharacter();
+	APalPlayerState* pPalPlayerState = Config.GetPalPlayerState();
+	if (!pPalCharacter || !pPalPlayerState)
+		return;
+
+	UWorld* world = Config.GetUWorld();
+	if (!world)
+		return;
+
+	TUObjectArray* objects = world->GObjects;
+
+	for (int i = 0; i < objects->NumElements; ++i)
+	{
+		UObject* object = objects->GetByIndex(i);
+
+		if (!object)
+			continue;
+
+		if (!object->IsA(APalLevelObjectNote::StaticClass()))
+			continue;
+
+		APalLevelObjectObtainable* note = (APalLevelObjectObtainable*)object;
+		if (!note) {
+			continue;
+		}
+
+		pPalPlayerState->RequestObtainLevelObject_ToServer(note);
+	}
+}
+
+
 //	Credit: BennettStaley
 void IncrementInventoryItemCountByIndex(__int32 mCount, __int32 mIndex)
 {

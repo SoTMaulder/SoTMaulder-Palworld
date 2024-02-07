@@ -771,6 +771,39 @@ namespace DX11_Base {
                     ((SDK::APalPlayerState*)pPalCharacter->PlayerState)->RequestObtainLevelObject_ToServer(relic);
                 }
             }
+
+            if (ImGui::Button("All Journals", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
+            {
+                SDK::APalPlayerCharacter* pPalCharacter = Config.GetPalPlayerCharacter();
+                if (!pPalCharacter)
+                    return;
+
+                SDK::UWorld* world = Config.GetUWorld();
+                if (!world)
+                    return;
+
+                SDK::TUObjectArray* objects = world->GObjects;
+
+                for (int i = 0; i < objects->NumElements; ++i) {
+                    SDK::UObject* object = objects->GetByIndex(i);
+
+                    if (!object) {
+                        continue;
+                    }
+
+                    if (!object->IsA(SDK::APalLevelObjectNote::StaticClass())) {
+                        continue;
+                    }
+
+                    SDK::APalLevelObjectObtainable* note = (SDK::APalLevelObjectObtainable*)object;
+                    if (!note) {
+                        continue;
+                    }
+
+                    ((SDK::APalPlayerState*)pPalCharacter->PlayerState)->RequestObtainLevelObject_ToServer(note);
+                }
+            }
+
             if (ImGui::Button("Unlock Fast Travel", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20))) //credit aaacaaac
             {
                 std::vector<std::string> keyStrings = {
