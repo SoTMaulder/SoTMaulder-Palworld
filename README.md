@@ -4,6 +4,11 @@ modifying player data in the Player tab
 Network cracking in the Exploit tab
 # Note: The master branch does not include visual
 
+>[!Warning]
+>Incompatible with other programs and overlays which also access the game. 
+>For example:
+>- blitz.gg
+
 # Player Features
 - Modify Player Speed (Player not world)
 - Modify Player Attack Power
