@@ -2,6 +2,12 @@
 This is the PalWorld network cracking framework
 modifying player data in the Player tab
 Network cracking in the Exploit tab
+
+>[!Warning]
+>Incompatible with other programs and overlays which also access the game. 
+>For example:
+>- blitz.gg
+
 # Note: The master branch does not include visual
 
 # Player Features
