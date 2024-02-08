@@ -13,8 +13,8 @@ class config
 public:
 	//offsets
 	DWORD64 ClientBase = 0;
-	DWORD64 offset_Tick = 0x2AA95B0;//APalPlayerCharacter::Tick // 48 89 5C 24 ? 57 48 83 EC 60 48 8B F9 E8 ? ? ? ? 48 8B | [IDA NOTE: 2ND RESULT]
-	DWORD64 offset_CatchRate = 0x26A1B60; //APalCaptureJudgeObject::ChallengeCapture
+	DWORD64 offset_Tick = 0x2AA9950;//APalPlayerCharacter::Tick // 48 89 5C 24 ? 57 48 83 EC 60 48 8B F9 E8 ? ? ? ? 48 8B | [IDA NOTE: 2ND RESULT]
+	DWORD64 offset_CatchRate = 0x26A1E30; //APalCaptureJudgeObject::ChallengeCapture
 	//check
 	bool IsESP = false;
 	bool IsFullbright = false;
